@@ -3,6 +3,8 @@ from octo.handler.clean import CleanTemplate
 import shutil
 import os
 from octo.commands.generate.utils import read_file, write_file
+from octo.commands.generate.utils import replace_in_files
+import os
 
 
 class OctoLaunchClean(CleanTemplate):
@@ -51,3 +53,15 @@ class OctoLaunch(CloneCache):
     project_name_cache = "octo-launch"
     repo_url = "https://github.com/caodlly/octo-launch"
     clean_class = OctoLaunchClean
+
+    def clone(self):
+        super().clone()
+        files = [
+            "docker-compose.dev.yml",
+            "docker-compose.docs.yml",
+            "docker-compose.gunicorn.yml",
+            "docker-compose.node.yml",
+            "docker-compose.uwsgi.yml",
+            os.path.join(".envs", ".env.dev"),
+        ]
+        replace_in_files(files, new_word=self.project_name, project_path=self.project_name)
