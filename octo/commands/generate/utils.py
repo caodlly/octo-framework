@@ -1,5 +1,6 @@
 import os
 
+
 def read_file(file_path):
     """Reads the content of the file."""
     with open(file_path, "r") as file:
@@ -32,7 +33,7 @@ def replace_in_files(file_list, old_word="$NAME$", new_word="", project_path=Non
 
         try:
             # Read file content
-            with open(file_path, 'r', encoding='utf-8') as file:
+            with open(file_path, "r", encoding="utf-8") as file:
                 content = file.read()
 
             # Perform replacement
@@ -43,7 +44,7 @@ def replace_in_files(file_list, old_word="$NAME$", new_word="", project_path=Non
                 continue
 
             # Write modified content back to file
-            with open(file_path, 'w', encoding='utf-8') as file:
+            with open(file_path, "w", encoding="utf-8") as file:
                 file.write(new_content)
 
             results[filename] = "Successfully replaced"

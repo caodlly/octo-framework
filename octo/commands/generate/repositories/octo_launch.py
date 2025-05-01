@@ -63,4 +63,6 @@ class OctoLaunch(CloneCache):
             "docker-compose.uwsgi.yml",
             os.path.join(".envs", ".env.dev"),
         ]
-        replace_in_files(files, new_word=self.project_name, project_path=self.project_name)
+        replace_in_files(
+            files, new_word=self.project_name, project_path=self.project_name
+        )
