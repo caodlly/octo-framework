@@ -4,7 +4,6 @@ import shutil
 import os
 from octo.commands.generate.utils import read_file, write_file
 from octo.commands.generate.utils import replace_in_files
-import os
 
 
 class OctoLaunchClean(CleanTemplate):
