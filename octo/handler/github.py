@@ -1,7 +1,8 @@
-import git
 import os
-import requests
 import re
+
+import git
+import requests
 from colorama import Fore, Style, init
 
 
