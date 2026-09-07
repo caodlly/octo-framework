@@ -1,9 +1,9 @@
+import os
+import shutil
+
+from octo.commands.generate.utils import read_file, replace_in_files, write_file
 from octo.handler.cache import CloneCache
 from octo.handler.clean import CleanTemplate
-import shutil
-import os
-from octo.commands.generate.utils import read_file, write_file
-from octo.commands.generate.utils import replace_in_files
 
 
 class OctoLaunchClean(CleanTemplate):

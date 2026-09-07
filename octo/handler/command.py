@@ -1,5 +1,6 @@
-import sys
 import os
+import sys
+
 import django
 
 
@@ -93,4 +94,3 @@ class Command:
 
     def handle(self):
         """Here you create your own command"""
-        pass
