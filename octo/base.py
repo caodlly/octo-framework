@@ -1,7 +1,6 @@
-from pathlib import Path
 import os
 import sys
-
+from pathlib import Path
 
 # === variables =====================================
 BASE_DIR = Path(__file__).resolve().parent
