@@ -1,7 +1,8 @@
 import logging
 import logging.config
-from octo.logging.config import get_logging
 import re
+
+from octo.logging.config import get_logging
 
 
 class Logger:

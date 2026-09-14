@@ -54,6 +54,6 @@ def replace_in_files(file_list, old_word="$NAME$", new_word="", project_path=Non
         except UnicodeDecodeError:
             results[filename] = "Error: Could not decode file (try different encoding)"
         except Exception as e:
-            results[filename] = f"Error: {str(e)}"
+            results[filename] = f"Error: {e!s}"
 
     return results
