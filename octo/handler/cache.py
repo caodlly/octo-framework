@@ -1,10 +1,12 @@
-from appdirs import user_cache_dir
 import os
-import sys
-from octo.base import _error_structure
-from requests.exceptions import HTTPError
 import shutil
+import sys
+
+from appdirs import user_cache_dir
 from colorama import Fore, Style, init
+from requests.exceptions import HTTPError
+
+from octo.base import _error_structure
 from octo.handler.clean import CleanTemplate
 from octo.handler.github import GitHubRepositorie
 
