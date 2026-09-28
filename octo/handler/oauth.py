@@ -1,9 +1,10 @@
 import requests
 from django.contrib.auth import get_user_model
-from octo.utils.generate import generate_code
-from octo.logging import Logger, sanitize_message
-from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.authtoken.models import Token
+from rest_framework_simplejwt.tokens import RefreshToken
+
+from octo.logging import Logger, sanitize_message
+from octo.utils.generate import generate_code
 
 User = get_user_model()
 
@@ -20,7 +21,6 @@ class OAuthHandler:
 
     def get_service_url(self) -> str:
         """Return the URL of the service to be used for processing."""
-        pass
 
     def validate_access_token(self) -> bool:
         """
@@ -30,7 +30,6 @@ class OAuthHandler:
         and not by any other application. It returns True if the token is valid and
         originates from our application, otherwise it returns False.
         """
-        pass
 
     def _get_headers(self):
         return {"Authorization": "Bearer " + self.access_token}
