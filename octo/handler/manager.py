@@ -1,4 +1,5 @@
 import sys
+
 from octo.handler.command import Command
 
 
@@ -54,8 +55,8 @@ class Manager:
         self.run()
 
     def help(self):
-        from django.core.management import execute_from_command_line
         from colorama import Fore, Style, init
+        from django.core.management import execute_from_command_line
 
         init()
         execute_from_command_line(self._argv)
