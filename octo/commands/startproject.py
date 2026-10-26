@@ -1,7 +1,6 @@
-from octo.handler.command import Command
 from octo.commands.generate.repositories.octo_launch import OctoLaunch
 from octo.handler.cache import CloneCache
-
+from octo.handler.command import Command
 
 templates = {
     "octo-launch": OctoLaunch,

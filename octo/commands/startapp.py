@@ -10,10 +10,13 @@ class StartApp(Command):
 
     def handle(self):
         # === import =====================================
-        import subprocess
         import os
-        from octo.base import BASE_DIR as octo_dir, _error_structure
+        import subprocess
+
         from colorama import Fore, Style, init
+
+        from octo.base import BASE_DIR as octo_dir
+        from octo.base import _error_structure
 
         init()
         # === Logic ======================================
