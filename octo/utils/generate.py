@@ -1,13 +1,14 @@
-from faker import Faker
-from PIL import Image
-from io import BytesIO
-import uuid
+import binascii
+import os
 import random
 import secrets
 import string
+import uuid
+from io import BytesIO
+
 from django.core.files.uploadedfile import SimpleUploadedFile
-import binascii
-import os
+from faker import Faker
+from PIL import Image
 
 
 def get_login(data: dict):
