@@ -1,6 +1,7 @@
-from octo.handler.oauth import OAuthHandler
 import requests
 from django.conf import settings
+
+from octo.handler.oauth import OAuthHandler
 
 
 class OAuthGoogle(OAuthHandler):
