@@ -1,5 +1,6 @@
-from django.conf import settings
 import os
+
+from django.conf import settings
 
 try:
     OCTO_LOGGER_NAME = settings.OCTO_LOGGER_NAME
