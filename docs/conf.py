@@ -7,12 +7,11 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import datetime
 
-
 current_year = datetime.datetime.now().year
 if 2024 == current_year:
     date = current_year
 else:
-    date = "2024-{}".format(current_year)
+    date = f"2024-{current_year}"
 
 
 project = "octo-framework"
